@@ -96,9 +96,7 @@ console.log(comidas);
 
 //SLIDE 34
 
-//function exibirNomes(comidas) {
 var cont = 0;
-   // var resultadoNome
     while (cont < comidas.length){
         console.log(comidas[cont].nome)
         cont = cont + 1;

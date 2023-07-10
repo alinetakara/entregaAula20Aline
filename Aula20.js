@@ -31,20 +31,20 @@ let inputBotaoMultiplica = document.getElementById("multiplica")
 let inputBotaoDivide = document.getElementById("divide")
 let div = document.getElementById("minhaDiv")
 let element
+let p = document.getElementById("meuParagrafo")
 
 function soma() {
     let resultadoSoma = parseInt(num1.value) + parseInt(num2.value);
     element = document.createElement("p");
-    element.innertext = resultadoSoma;
+    element.innerHTML = resultadoSoma;
     div.appendChild(element)
-
     console.log(resultadoSoma)
 }
 
 function subtrai() {
     let resultadoSubtracao = parseInt(num1.value) - parseInt(num2.value);
     element = document.createElement("p");
-    element.innertext = resultadoSubtracao;
+    element.innerHTML = resultadoSubtracao;
     div.appendChild(element)
 
     console.log(resultadoSubtracao)
@@ -53,7 +53,7 @@ function subtrai() {
 function multiplica() {
     let resultadoMultiplicacao = parseInt(num1.value) * parseInt(num2.value);
     element = document.createElement("p");
-    element.innertext = resultadoMultiplicacao;
+    element.innerHTML = resultadoMultiplicacao;
     div.appendChild(element)
 
     console.log(resultadoMultiplicacao)
@@ -62,7 +62,7 @@ function multiplica() {
 function divide() {
     let resultadoDivisao = parseInt(num1.value) / parseInt(num2.value);
     element = document.createElement("p");
-    element.innertext = resultadoDivisao;
+    element.innerHTML = resultadoDivisao;
     div.appendChild(element)
 
     console.log(resultadoDivisao)
